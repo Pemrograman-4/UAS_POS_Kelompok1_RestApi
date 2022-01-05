@@ -23,10 +23,10 @@ exports.add = (data) =>
   new Promise((resolve, reject) => {
     Model.create(data)
       .then(() =>
-        resolve(response.suksesResponse("Berhasil Menambah Data Sepatu"))
+        resolve(response.suksesResponse("Berhasil Menambah Data Barang"))
       )
       .catch(() =>
-        reject(response.errorResponse("Gagal Menambah Data Sepatu"))
+        reject(response.errorResponse("Gagal Menambah Data Barang"))
       );
   });
 
